@@ -1,0 +1,99 @@
+body{
+    -webkit-background-size:cover;
+    background-size:cover;
+}
+a:hover{
+    cursor: pointer;
+}
+
+nav{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding:0 15em ;
+}
+
+.container{
+    padding:0 10em;
+    color: white;
+}
+.nav-header span{
+}
+.container table nav ul,.container table nav li{
+    list-style: none;
+    display: inline-block;
+}
+.left-info{
+    float: left;
+}
+.right-info{
+    padding-top: 2em;
+    padding-left: 1em;
+}
+.right-info ul, .right-info li{
+    display: inline-block;
+    list-style: none;
+    margin-top: 1em;
+    padding:.5em;
+}
+.right-info ul{
+    padding:0;
+    background:#222;
+    padding:0 .8em;
+}
+.right-info li a{
+    color: #9d9d9d;
+}
+.right-info li a:hover{
+    color: white;
+}
+
+.row div{
+    background: #222;
+    margin: 1em;
+    padding: .5em;
+}
+.row ul{
+    list-style: none;
+    padding-left: .5em;
+}
+.row ul li a{
+    line-height: 3em;
+    color: #9d9d9d;
+}
+
+.selfie{
+	width:3em;
+	height:3em;
+	border-radius:50%;
+}
+
+/*body{*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+/*}*/
+
+/*nav{*/
+
+
+/*}*/
+/*.container{*/
+    /*background-color: #bababa;*/
+    /*padding:0 15em;*/
+/*}*/
+/*ul,li{*/
+    /*display: inline-block;*/
+    /*list-style: none;*/
+/*}*/
+/*.nav-logo{*/
+    /*float: left;*/
+/*}*/
+/*.nav-logo h1, .nav-logo p{*/
+    /*display: inline-block;*/
+/*}*/
+/*.nav-help{*/
+    /*float: right;*/
+/*}*/
+/*ul li a{*/
+    /*text-decoration: none;*/
+/*}*/

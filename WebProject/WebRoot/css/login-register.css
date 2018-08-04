@@ -1,0 +1,68 @@
+
+body{
+    background: url("../img/login-bg.jpg");
+    background-size:cover;
+    padding: 5em 15em;
+    background-color: #ccc ;
+}
+.container{
+    background: white;
+    border:3px solid #eee;
+    border-radius: 3px;
+    width: 20em;
+    padding: 1em 2em;
+    float: right;
+    line-height: 2em;
+    text-align: center;
+
+}
+.right-label{
+    text-align: right;
+}
+
+form{
+    margin-top: 1.5em;
+}
+
+input{
+    padding: .2em;
+}
+input[type="submit"],input[type="reset"]{
+    margin:0 2em;
+    width: 6em;
+    text-align: center;
+}
+input[type="submit"]:hover,input[type="reset"]:hover{
+    color: #9d9d9d;
+}
+a{
+    font-size: .8em;
+    color: #0c5460;
+}
+a:hover{
+    color: #0b2e13;
+}
+#message{
+    font-size: .8em;
+    color: orangered;
+}
+.logo{
+    color: #eee;
+}
+h1{
+    display: inline-block;
+    line-height: .1em;
+}
+
+.logo table tr td p{
+    text-align: justify;
+    padding: 0 2em;
+    font-size: 1.1em;
+    line-height: .1em;
+}
+.logo table tr td p:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+

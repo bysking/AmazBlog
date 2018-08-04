@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>AmzBlog</display-name>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.amzblog.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.amzblog.servlet.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindPasswordServlet</servlet-name>
+    <servlet-class>com.amzblog.servlet.FindPasswordServlet</servlet-class>
+  </servlet>
+
+<filter>
+	<filter-name>SessionFilter</filter-name>
+	<filter-class>com.amzblog.filter.SessionFilter</filter-class>
+</filter>
+
+
+<filter-mapping>
+	<filter-name>SessionFilter</filter-name>
+	<url-pattern>/*</url-pattern>
+</filter-mapping>
+
+
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/servlet/LoginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/servlet/RegisterServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindPasswordServlet</servlet-name>
+        <url-pattern>/servlet/FindPasswordServlet</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+    <servlet>
+        <servlet-name>AddFriendServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.AddFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddFriendServlet</servlet-name>
+        <url-pattern>/servlet/AddFriendServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.AdminLoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminLoginServlet</servlet-name>
+        <url-pattern>/servlet/AdminLoginServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/servlet/AdminServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>BlogServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.BlogServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BlogServlet</servlet-name>
+        <url-pattern>/servlet/BlogServlet</url-pattern>
+        <url-pattern>*.db</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DelFriendServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.DelFriendServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DelFriendServlet</servlet-name>
+        <url-pattern>/servlet/DelFriendServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FeelingServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.FeelingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FeelingServlet</servlet-name>
+        <url-pattern>*.df</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FriendZoneServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.FriendZoneServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FriendZoneServlet</servlet-name>
+        <url-pattern>/servlet/FriendZoneServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>InfoServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.InfoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>InfoServlet</servlet-name>
+        <url-pattern>/servlet/InfoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>MessageServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.MessageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MessageServlet</servlet-name>
+        <url-pattern>*.dm</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>FriendListServlet</servlet-name>
+        <servlet-class>com.amzblog.servlet.FriendListServlet</servlet-class>
+    </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowServlet</servlet-name>
+    <servlet-class>com.amzblog.servlet.ShowServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ZoneServlet</servlet-name>
+    <servlet-class>com.amzblog.servlet.ZoneServlet</servlet-class>
+  </servlet>
+
+
+    <servlet-mapping>
+        <servlet-name>FriendListServlet</servlet-name>
+        <url-pattern>/servlet/FriendListServlet</url-pattern>
+    </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowServlet</servlet-name>
+    <url-pattern>/servlet/ShowServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ZoneServlet</servlet-name>
+    <url-pattern>/servlet/ZoneServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
